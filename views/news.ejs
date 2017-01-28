@@ -14,13 +14,11 @@
   </header>
   <div class="scroll">
     <section>
-      <ul class="list">
-        <% news.forEach(function(item) {%>
-          <li>
-            <a href="news/<%= item.id %>"><%= item.webTitle %></a>
-          </li>
-        <% }); %>
-      </ul>
+      <div><%- news.webTitle %></div>
+      <img class="headerImage" src="<%= news.headerImage %>" />
+      <div class="content">
+        <%- news.contentHTML %>
+      </div>
     </section>
   </div>
 </div>

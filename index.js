@@ -1,5 +1,6 @@
 import Express from 'express';
 import news from './data/news.json';
+import newsDetails from './data/details.json';
 
 const app = Express();
 const port = process.env.PORT || 3000;
@@ -16,6 +17,12 @@ app.use('/static', Express.static('./public'));
 app.get('/', function(req, res) {
   res.render('index', {
   	'news': news.results
+  });
+});
+
+app.get('/news/:id', function(req, res) {
+  res.render('news', {
+  	'news': newsDetails[req.params.id]
   });
 });
 

@@ -42,6 +42,8 @@ body{
   margin-top: 44px;
 }
 
+/*homepage*/
+
 .list {
   margin: 0;
   padding: 0;
@@ -70,6 +72,22 @@ body{
   border-top: 0;
 }
 
+
+/*detail page*/
+
+.headerImage {
+  width: 380px;
+  height: 230px;
+  object-fit: cover;
+}
+
+.content {
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+
 @media only screen and (min-width: 788px) {
   body{
     background-color: #fafafa;
@@ -84,5 +102,6 @@ body{
   }
   .view>.scroll{
     margin-top: 0;
+    min-height: auto;
   }
 }
