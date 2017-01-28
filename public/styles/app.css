@@ -49,6 +49,27 @@ body{
   background-color: #fff;
 }
 
+.list li {
+  display: block;
+  border-top: 1px solid #e0e0e0;
+}
+
+.list li a {
+  color: #000;
+  font-size: 14px;
+  padding: 20px;
+  display: block;
+  text-decoration: none;
+}
+
+.list li a:hover {
+  background: #F6F6EF;
+}
+
+.list li:first-child {
+  border-top: 0;
+}
+
 @media only screen and (min-width: 788px) {
   body{
     background-color: #fafafa;

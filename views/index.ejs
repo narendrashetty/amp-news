@@ -16,7 +16,9 @@
     <section>
       <ul class="list">
         <% news.forEach(function(item) {%>
-          <li><%= item.id %></li>
+          <li>
+            <a href="#"><%= item.webTitle %></a>
+          </li>
         <% }); %>
       </ul>
     </section>
