@@ -22,7 +22,15 @@ app.get('/', function(req, res) {
 
 app.get('/news/:id', function(req, res) {
   res.render('news', {
-  	'news': newsDetails[req.params.id]
+    'id': req.params.id,
+    'news': newsDetails[req.params.id]
+  });
+});
+
+app.get('/amp/:id', function(req, res) {
+  res.render('amp', {
+    'id': req.params.id,
+    'news': newsDetails[req.params.id]
   });
 });
 

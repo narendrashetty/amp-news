@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>AMP News</title>
+  <link rel="amphtml" href="/amp/<%= id %>" />
 	<link rel="stylesheet" type="text/css" href="/static/styles/app.css">
 </head>
 <body>
@@ -14,8 +15,8 @@
   </header>
   <div class="scroll">
     <section>
-      <div><%- news.webTitle %></div>
       <img class="headerImage" src="<%= news.headerImage %>" />
+      <h5><%- news.webTitle %></h5>
       <div class="content">
         <%- news.contentHTML %>
       </div>
